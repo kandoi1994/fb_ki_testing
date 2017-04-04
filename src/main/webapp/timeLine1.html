@@ -239,10 +239,8 @@ window.go = function(e1){
           var hometown=$("input#hometown").val();
           var cityOfWork=$("input#workcity").val();
           var highschool=$("input#highschool").val();
-          var bestplace=$('select#bestplace option:selected').text();
-          alert("bestplace"+bestplace);
           var obj = { mob_no:mob_no,college:college,placeOfWork:placeOfWork,
-                  hometown:hometown,cityOfWork:cityOfWork,highschool:highschool,bestPlace:bestplace
+                  hometown:hometown,cityOfWork:cityOfWork,highschool:highschool
                   };  
           var myJSON = JSON.stringify(obj);
               
@@ -1090,17 +1088,7 @@ window.go = function(e1){
         </div>
              <br>
              
-      <div class="form-group">
-         <label for="bestplace">SBestPlace (select one):</label>
-      <select class="form-group" name="bestplaces" id="bestplace" style="margin-left:10px;">
-        <option value="Bangalore">Bangalore</option>
-        <option value="Tokyo">Tokyo</option>
-        <option value="Pataya">Pataya</option>
-        <option value="Malasia">Malasia</option>
-      </select>
-        </div>
-             <br>      
-             
+   
        
     </div>
     

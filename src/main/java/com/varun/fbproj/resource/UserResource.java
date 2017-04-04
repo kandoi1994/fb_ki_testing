@@ -301,8 +301,30 @@ public class UserResource {
 		return u1;
 	 
     }//retrive other method ends here
-    
-    
+    @POST
+    @Path("/retrive_other1")
+    @Consumes({MediaType.TEXT_PLAIN})
+	@Produces({MediaType.APPLICATION_JSON})
+    public User retrive_friendData1( String emailID) throws JsonParseException, JsonMappingException, IOException 
+    {
+    	
+    	emailID=emailID.substring(1, emailID.length()-1);
+    	System.out.println("----------------"+emailID);
+    //	System.out.println("friend user id ="+ userID);
+    	/*System.out.println("jwt string other="+ femail);
+    	Claims claims = Jwts.parser()         
+			       .setSigningKey("secret".getBytes("UTF-8"))
+			       .parseClaimsJws(femail).getBody();
+    	System.out.println("Subject: " + claims.getSubject());	
+		String emailID=claims.getSubject();		*/
+    	
+    	User u1=RetriveService.getUserAllData(emailID);
+		
+	
+		return u1;
+	 
+    }//retrive other method ends here
+     
     
     
 	
