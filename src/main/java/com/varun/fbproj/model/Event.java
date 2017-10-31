@@ -25,6 +25,7 @@ public void setTime(String time) {
 }
 
 public String getEventType() {
+	System.out.println("hi");
 	return eventType;
 }
 
