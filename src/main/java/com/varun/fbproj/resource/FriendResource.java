@@ -46,6 +46,7 @@ public class FriendResource {
     		) throws JsonParseException, JsonMappingException, IOException{
 	
 		System.out.println("inside get my all friends");
+	    System.out.println("inside get my all friends");
 		System.out.println("jwt="+ jwt);
 		Claims claims = Jwts.parser()         
 			       .setSigningKey("secret".getBytes("UTF-8"))
